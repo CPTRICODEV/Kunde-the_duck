@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/892460932863766539/969877776226197564/unknown.png">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <script src="../js/dashboardFunctions.js"></script>
+  <title>Pacific.dk</title>
+</head>
+<body>
+  <section id="header" >
+    <img class="logo" src="https://cdn.discordapp.com/attachments/892460932863766539/969877776226197564/unknown.png" alt="">
+    <div class="imgbackground"></div>
+    <div class="bordercolor__css__nav"></div>
+    <div class="background__nav"></div>
+   <div class="nav" >
+       <a class="navbutton" href="/logout">Forside</a>
+       <a class="navbutton" href="http://discord.gg//pacificrp" target="__blank">Discord</a>
+       <a class="navbutton" href="./pages/regler.html">Regler</a>
+       <a class="navbutton" href="./pages/regler.html">Partners</a>
+       <a class="navbutton" href="./pages/regler.html">Whitelist</a>
+       <a class="logoutbutton" href="/logout">Logout</a>
+       <% if(username == "CPTRICO"){ %>
+        <a class="navbutton" href="">Admin</a>
+     <% } %>
+       <button onclick="dropdownFucntion()" id="dropdownbtn" class="navbutton" >Andet
+        <svg style="background: transparent; transform:rotate(180deg); position:absolute; top: 5px;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.646 6.854a.5.5 0 00.708 0L6 4.207l2.646 2.647a.5.5 0 10.708-.708l-3-3a.5.5 0 00-.708 0l-3 3a.5.5 0 000 .708z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M6 3.5a.5.5 0 00-.5.5v6.5A2.5 2.5 0 008 13h5.5a.5.5 0 000-1H8a1.5 1.5 0 01-1.5-1.5V4a.5.5 0 00-.5-.5z" clip-rule="evenodd"></path></svg>
+      </button>
+       <div id="dropdownmenu" class="dropdown-content">
+        <a class="navbutton" href="./pages/regler.html">Ansøgninger</a>
+        <a class="navbutton" href="./pages/regler.html">Virksomheder</a>
+        <a class="navbutton" href="./pages/regler.html">Bander</a>
+        <a class="navbutton" href="./pages/regler.html">Keybinds</a>
+        <a class="navbutton" href="./pages/regler.html">Donation</a>
+        
+       </div>
+       <img  class="loginicon" src="<%= avatar %>" alt="<%= username %>">
+       
+       
+   </div>
+</section>
+<section id="main">
+  <div class="background">
+    <img class="icon" src="https://cdn.discordapp.com/attachments/892460932863766539/969877776226197564/unknown.png" alt="">
+  <h1 class="title">Zetox</h1>
+  <div class="underline"></div>
+  <h2 class="undertitle">Velkommen Til Zetox</h2>
+  <h3 class="description">Her hos os, går vi meget op i at have et fællesskab, hvor folk kan hygge sig, og have det sjovt med hinanden. Selvfølgelig går vi også op i, at vores RP er realistisk, så det faktisk er sjovt at spille for alle.</h3>
+  <a  class="rules" href="/regler">Læs Reglerne</a>
+  <a  class="discord" href="http://discord.gg//pacificrp" target="__blank">Join Discord</a>
+  </div>
+  
+</section>
+
+
+<section id="news">
+  <div class="card-container">
+    <div class="news_card">
+      <h1><svg style="background: transparent; position:absolute; top:10px; right:185px;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M19.875,3H4.125C2.953,3,2,3.897,2,5v14c0,1.103,0.953,2,2.125,2h15.75C21.047,21,22,20.103,22,19V5 C22,3.897,21.047,3,19.875,3z M19.875,19H4.125c-0.057,0-0.096-0.016-0.113-0.016c-0.007,0-0.011,0.002-0.012,0.008L3.988,5.046 C3.995,5.036,4.04,5,4.125,5h15.75C19.954,5.001,19.997,5.028,20,5.008l0.012,13.946C20.005,18.964,19.96,19,19.875,19z"></path><path d="M6 7H12V13H6zM13 15L6 15 6 17 13 17 14 17 18 17 18 15 14 15zM14 11H18V13H14zM14 7H18V9H14z"></path></svg> Nyheder</h1>
+      <div class="newcard_itemcardcontainer">
+        <div class="news_itemcard">
+          <div class="newcard_background"></div>
+          <img src="<%= avatar %>" alt="">
+          <h5><%= username%></h5>
+          <h5 style="left:190px">(<%=timedate %>)</h5>
+        </div>
+        
+      </div>
+      </div>
+     </div>
+  </div>
+ 
+</section>
+
+
+</body>
+</html>

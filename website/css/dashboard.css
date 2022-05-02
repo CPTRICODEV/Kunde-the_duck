@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     background: rgb(36, 36, 36);
+    
+}
+
+body {
+    background-image: url('./assets/background.png');
+    background-repeat: no-repeat;
+
+  background-size: cover;
+    
+}
+
+:root {
+    --primary-color: rgb(0, 174, 255);
+    --border-color: rgb(0, 174, 255);
+    --button-color: rgb(0, 174, 255);
+    
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    gap: 20px;
+    left: 80px;
+    top: 15px;
+    background: transparent;
+    z-index: 1000;
+}
+
+.logo {
+    position:fixed;
+    left: 10px;
+    top: 0px;
+    font-weight: 500;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    background: transparent;
+}
+
+.imgbackground {
+    background: #333;
+    width: 70px;
+    height: 50px;
+    position:fixed;
+    left: 0px;
+    top: 1px;
+    content: '';
+    z-index: 1;
+    
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    background: transparent;
+    z-index: 1000;
+}
+
+.loginicon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50px;
+    border-color: var(--primary-color);
+    border-style: solid;
+    top: -9px;
+    left: 2353px;
+}
+
+#dropdownbtn {
+    background: transparent; 
+    text-decoration: none;
+    color: white;
+    border-style: hidden;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#dropdownbtn:hover {
+    color: var(--primary-color);
+}
+
+.logoutbutton{
+    position: absolute;
+   left: 2400px;
+   color: var(--primary-color);
+}
+
+.logoutbutton:hover{
+    position: absolute;
+   color: var(--primary-color);
+}
+
+.navbutton:hover {
+    color: var(--primary-color);
+}
+
+
+.bordercolor__css__nav {
+    width: 100%;
+    height: 3px;
+    background: var(--border-color);
+    content: '';
+    top: 50px;
+    position: fixed;
+    z-index: 10;
+   
+}
+
+.background__nav {
+    background: #333;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    content: '';
+    position: fixed;
+    z-index: 10;
+   
+}
+
+
+
+.background {
+    position: relative;
+    width: 100%;
+    position: absolute;
+    height: 350px;
+    top: 75px;
+    background: #333;
+    z-index: 1;
+    
+}
+
+.title {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background: transparent;
+    top: 11px;
+    font-size: 35px;
+    position: absolute;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-left: 44%;
+    transform: translateX(-45%);
+    top: -2px;
+    background: transparent;
+    z-index: 10;
+    
+}
+
+.undertitle {
+    text-align: center;
+    color: white;
+    background: transparent;
+    font-size: 25px;
+    margin-top: 100px;
+ 
+
+}
+
+.underline {
+    width: 50%;
+    height: 2px;
+    background: var(--border-color);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 90px;
+    position: absolute;
+
+}
+
+.description {
+    color: white;
+    background: transparent;
+    text-align: center;
+    width: 1000px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    white-space: pre-line;
+    font-size: 15px;
+}
+
+.rules {
+    text-decoration: none;
+    background: var(--button-color);
+    font-size: 15px;
+    border-radius: 50px;
+    border-color: var(--button-color);
+    border-radius: 6px;
+    border-style: solid;
+    padding: 0.3em 2em;
+    color: white;
+    margin-left: 55%;
+    transform: translateX(-53%);
+    position: absolute;
+    top: 200px;
+}
+
+.discord {
+    text-decoration: none;
+    background: transparent;
+    font-size: 15px;
+    border-radius: 50px;
+    border-color: var(--button-color);
+    border-radius: 6px;
+    border-style: solid;
+    padding: 0.3em 2em;
+    color: white;
+    margin-left: 46%;
+    transform: translateX(-46%);
+    position: absolute;
+    top: 200px;
+}
+
+#news {
+    position: relative;
+    height: 100vh;
+    top: 450px;
+}
+
+.dropdown-content {
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    z-index: 100;
+    left: 400px;
+    top: 25px;
+    z-index: 100000;
+    visibility: hidden;
+}
+
+.newcard_itemcardcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 250px;
+    margin-top: 150px;
+}
+
+
+.news_card {
+    position: absolute;
+    border-radius: 5px;
+    background: #333;
+    content: '';
+    justify-items: center;
+    align-items: center;
+    width: 98.5%;
+    height: 50%;
+    left: 0.7%;
+    box-shadow: 0px -4px var(--primary-color);
+    z-index: 1;
+    top: 5px;
+
+ 
+}
+
+.news_card h1{
+    color: white;
+    position: absolute;
+    background: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 400px;
+    font-size: 45px;
+    font-weight: 300;
+    
+}
+
+.newcard_background {
+    background: rgb(77, 77, 77);
+    width: 90%;
+    height: 200px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%) ;    
+    box-shadow: -5px 0px var(--primary-color);
+
+}
+
+.news_itemcard img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    left: 95px;
+    top: 310px;
+}
+
+.news_itemcard h5 {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    left: 130px;
+    top: 315px;
+    background: transparent;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 2000px) {
+    .icon {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        margin-left: 46%;
+        transform: translateX(-45%);
+        top: -2px;
+        background: transparent;
+        z-index: 10;
+        
+    }
+    
+}
+
+.news_card h1{
+    color: white;
+    position: absolute;
+    background: transparent;
+    left: 50%;
+    transform: translateX(-50%) ;
+    top: 20px;
+    font-size: 45px;
+    font-weight: 300;
+    z-index: 100;
+    
+}
+
+@media screen and (max-width: 1920px) {
+    
+    .description {
+        color: white;
+        background: transparent;
+        text-align: center;
+        width: 900px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-weight: 500;
+        white-space: pre-line;
+        font-size: 15px;
+    }
+    
+    .rules {
+        text-decoration: none;
+        background: var(--button-color);
+        font-size: 15px;
+        border-radius: 50px;
+        border-color: var(--button-color);
+        border-radius: 6px;
+        border-style: solid;
+        padding: 0.3em 2em;
+        color: white;
+        margin-left: 56%;
+        transform: translateX(-56%);
+        position: absolute;
+        top: 220px;
+    }
+    
+    .discord {
+        text-decoration: none;
+        background: transparent;
+        font-size: 15px;
+        border-radius: 50px;
+        border-color: var(--button-color);
+        border-radius: 6px;
+        border-style: solid;
+        padding: 0.3em 2em;
+        color: white;
+        margin-left: 44%;
+        transform: translateX(-44%);
+        position: absolute;
+        top: 220px;
+    }
+
+    .loginicon {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 50px;
+        border-color: var(--primary-color);
+        border-style: solid;
+        top: -9px;
+        left: 1485px;
+    }
+    
+    .logoutbutton{
+        position: absolute;
+       left: 1530px;
+       color: var(--primary-color);
+    }
+    .logoutbutton:hover{
+        position: absolute;
+       color: var(--primary-color);
+    }
+}
